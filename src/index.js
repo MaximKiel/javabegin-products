@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import {FilterableProductTable} from "./components/products/product-table";
+import {PRODUCTS} from "./components/products/test-data";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <FilterableProductTable products={PRODUCTS}/>
   </React.StrictMode>
 );
 
